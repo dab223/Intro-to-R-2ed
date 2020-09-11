@@ -92,8 +92,11 @@ rm(list=ls(all=TRUE))
 x <- 100
 y <- 250
 
-z1 <- X + y
-
+z1 <- x + y
+z2 <- x - y
+z3 <- x * y
+z4 <- x / y
+z5 <- x ^ y
 # The preceeding will return an error because X <> x
 
 z1 <- x + y
