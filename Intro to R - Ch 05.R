@@ -37,14 +37,14 @@ typeof(y)
 y <- as.integer(y)
 class(y)
 typeof(y)
-
-
+cat("Hi")
+cat("\014")
 
 # How to programmatically clear console
 cat("\014") 
 
 # Character
-Name <- "Troy"
+Name <- "Danyal"
 class(Name)
 typeof(Name)
 length(Name)
@@ -98,7 +98,8 @@ z3 <- x * y
 z4 <- x / y
 z5 <- x ^ y
 # The preceeding will return an error because X <> x
-
+class(z5)
+typeof(z5)
 z1 <- x + y
 z1
 z2 <- x - y
