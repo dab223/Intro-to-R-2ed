@@ -136,18 +136,19 @@ str(Yellow_Tripdata_2017_06)
 
 # Using head()
 head(Yellow_Tripdata_2017_06)
-head(Yellow_Tripdata_2017_06, n=3)
+head(Yellow_Tripdata_2017_06, n=5)
 head(Yellow_Tripdata_2017_06$trip_distance, n=10)
 head(Yellow_Tripdata_2017_06[4:5])
 
 # Using summary()
 summary(Yellow_Tripdata_2017_06)
 summary(Yellow_Tripdata_2017_06 $ trip_distance)
+summary(Yellow_Tripdata_2017_06 $ fare_amount)
 #
 # Throwing out "non-fares"
 Yellow_Tripdata_2017_06 <- Yellow_Tripdata_2017_06[which(
   Yellow_Tripdata_2017_06$fare_amount>=0 & 
-  Yellow_Tripdata_2017_06$fare_amount<100000),]
+  Yellow_Tripdata_2017_06$fare_amount<=100000),]
 summary(Yellow_Tripdata_2017_06 $ fare_amount)
 
 # Constraining passenger_count to = 1 or 2
