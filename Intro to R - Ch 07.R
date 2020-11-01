@@ -119,7 +119,7 @@ save(YT_Sample_Validated,file="YT_Sample_Validated.RData")
 rm(list=ls(all=TRUE))
 cat("\014")
 
-DF <- read.csv("PakistanSuicideAttacks Ver 11 (30-November-2017).csv")
+DF <- read_xls("PakistanSuicideAttacks.Rdata")
 class(DF)
 typeof(DF)
 View(DF)
